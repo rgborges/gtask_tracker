@@ -1,0 +1,29 @@
+using System.Text;
+
+public class TaskBook 
+{
+    private string _author;
+    private StringBuilder _builder;
+    private List<TaskLogRecord> _records;
+    private string _title;
+    public string Title
+    {
+        get => _title; set
+        {
+            _title = value;
+        }
+    }
+
+    public TaskBook(string author)
+    {
+        _title = $"{DateTime.Now.ToString()} by auhtor";
+        _author = author;
+        _records = new List<TaskLogRecord>();
+        _builder = new StringBuilder();
+    }
+    public void Add(TaskLogRecord log)
+    {
+        _records.Add(log);
+    }
+
+}

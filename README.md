@@ -44,7 +44,8 @@ Result:
 
 ``` json
 {
-    "document_render" : "markdown",
-    "save_directory" : "working_directory"
+    "documentRender" : "markdown",
+    "documentDirectoryOutput" : "working_directory",
+    "dataDirectory" : "C:\\temp\\"
 }
 ```
