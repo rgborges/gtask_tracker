@@ -7,7 +7,7 @@ public class TaskLogRecord : Entity
     public string? CommitMessage { get => _commitMessage; }
     public string? DevelopmentDetails { get => _developmentMessage; }
     public DateTime Timestamp { get => _timestamp; }
-    public string? Author { get => _author; }
+    public string Author { get => _author; }
 
     public TaskLogRecord(string commit, string development, string author)
     {

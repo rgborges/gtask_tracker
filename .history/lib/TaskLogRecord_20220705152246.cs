@@ -1,4 +1,4 @@
-public class TaskLogRecord : Entity
+public class TaskLogRecord
 {
     private string? _commitMessage;
     private string? _developmentMessage;
@@ -7,7 +7,7 @@ public class TaskLogRecord : Entity
     public string? CommitMessage { get => _commitMessage; }
     public string? DevelopmentDetails { get => _developmentMessage; }
     public DateTime Timestamp { get => _timestamp; }
-    public string? Author { get => _author; }
+    public string Author { get => _author; }
 
     public TaskLogRecord(string commit, string development, string author)
     {
@@ -23,6 +23,6 @@ public class TaskLogRecord : Entity
         this._commitMessage = commit;
         this._developmentMessage = development;
         this._author = author;
-        this._timestamp = timestamp;
+        this._timestamp = timestamp
     } 
 }
