@@ -1,3 +1,5 @@
+using System;
+
 public abstract class Entity
 {
     private Guid uuid;

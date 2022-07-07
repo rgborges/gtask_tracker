@@ -1,21 +1,20 @@
-using System.Runtime.Serialization;
+using System;
 
-[Serializable]
-internal class StringPolicyException : Exception
+namespace gtask_tracker.console
 {
-    public StringPolicyException()
+    internal class StringPolicyException : Exception
     {
-    }
+        public StringPolicyException()
+        {
+        }
 
-    public StringPolicyException(string? message) : base(message)
-    {
-    }
+        public StringPolicyException(string? message) : base(message)
+        {
+        }
 
-    public StringPolicyException(string? message, Exception? innerException) : base(message, innerException)
-    {
-    }
+        public StringPolicyException(string? message, Exception? innerException) : base(message, innerException)
+        {
+        }
 
-    protected StringPolicyException(SerializationInfo info, StreamingContext context) : base(info, context)
-    {
     }
 }

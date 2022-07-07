@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "29b7985b-584f-4fc9-80d1-1602c8b4a939": {
+      "ProjectGuid": "29b7985b-584f-4fc9-80d1-1602c8b4a939",
+      "DisplayName": "gtask_tracker.console",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

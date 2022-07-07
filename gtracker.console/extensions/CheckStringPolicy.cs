@@ -1,4 +1,7 @@
-public static class CheckStringPolicy
+
+namespace gtask_tracker.console
+{
+    public static class CheckStringPolicy
 {
     public static void Check(string input)
     {
@@ -20,4 +23,5 @@ public static class CheckStringPolicy
         }
         
     }
+}
 }
