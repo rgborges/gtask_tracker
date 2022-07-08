@@ -11,5 +11,6 @@ namespace gtask_tracker.console.models
         public DateTime StartTime { get; set; }
         public TaskStatus Status { get; set; }
         public List<TaskLogRecordDTO> Records {get; set;} = new List<TaskLogRecordDTO>();
+
     }
 }

@@ -11,9 +11,12 @@ namespace gtask_tracker.console
     {
         static void Main(string[] args)
         {
-           var report = Debug.GetSampleData();
-
-           Console.WriteLine("End");
+        
+            Measure.Run(() => {
+                var report = Debug.GetSampleData();
+                Display.PrintReport(report);
+            });
+            Console.WriteLine("End");
         }
     }
 }
