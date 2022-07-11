@@ -11,10 +11,12 @@ namespace gtask_tracker.console.app
             System.Console.WriteLine("--------------------------");
             foreach( TaskLogDTO t in report.Tasks)
             {
-                System.Console.WriteLine($"{nameof(t.Name)}: {t.Name}");
+                System.Console.WriteLine($"{nameof(t.Name)}: {t.Name} | {nameof(t.Status)} : {t.Status}");
+                System.Console.WriteLine($"{nameof(t.Description)}: {t.Description}");
                 foreach( TaskLogRecordDTO r in t.Records)
                 {
-                    System.Console.WriteLine($"{nameof(t.Description)} : {t.Description}");
+                    System.Console.WriteLine($"\t\t{nameof(r.CommitMessage)} : {r.CommitMessage} {r.Timestamp}");
+                    System.Console.WriteLine($"\t\t\t{nameof(r.DevelopmentDetails)} : {r.DevelopmentDetails}");
                 }
             }
         }
