@@ -1,16 +1,22 @@
 using System;
 
-namespace gtracker.console.Application
+namespace gtask_tracker.console.app
 {
     public class GTrackerApplication
     {
         private ICommandLine? _cli;
+        private IGTrackerAppLogger? _logger;
+        
         private bool _loop = false;
         public GTrackerApplication()
         {
 
         }
-        public void Add(ICommandLine commandLine)
+        public void AddLogger(IGTrackerAppLogger logger)
+        {
+            
+        }
+        public void AddCommandLine(ICommandLine commandLine)
         {
             if (commandLine == null)
             {

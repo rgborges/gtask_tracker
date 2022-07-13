@@ -1,0 +1,7 @@
+[Oo]bj
+[Bb]in
+.history
+../.hystory/
+../gtracker.console.tests/obj
+*.cache
+*.exe
